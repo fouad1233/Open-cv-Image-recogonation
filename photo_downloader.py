@@ -3,10 +3,12 @@ pip install git+https://github.com/Joeclinton1/google-images-download.git"""
 from google_images_download import google_images_download
 
 #instantiate the class
-response = google_images_download.googleimagesdownload()
-arguments = {"keywords":" Rachel Green ",
-             "limit":100,"print_urls":False}
-paths = response.download(arguments)
+missing_charackters = ["Monica Geller", "Phoebe Buffay", "Janice Hosenstein" , "Chandler Bing", "Ross Geller", "Joey Tribbiani"]
+for i in range(len(missing_charackters)):
+    response = google_images_download.googleimagesdownload()
+    arguments = {"keywords":"missing_charackters",
+                "limit":100,"print_urls":False}
+    paths = response.download(arguments)
 
-#print complete paths to the downloaded images
-print(paths)
+    #print complete paths to the downloaded images
+    print(paths)
