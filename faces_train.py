@@ -4,7 +4,7 @@ import os
 import cv2 as cv
 import numpy as np
 
-DIR = r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Faces/train'
+DIR = r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Photoes'
 people = []
 for i in os.listdir(DIR):
     people.append(i) 
