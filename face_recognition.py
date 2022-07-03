@@ -30,7 +30,7 @@ for (x,y,w,h) in faces_rect:
     print("Label = " , label)
     print(f'Label = {people[label]} with a confidence of {confidence}')
 
-    cv.putText(img, str(people[label]), (x+w,y+h), cv.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0), thickness=2)
+    cv.putText(img, str(people[label]), (x,y+h+25), cv.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0), thickness=2)
     cv.rectangle(img, (x,y), (x+w,y+h), (0,255,0), thickness=2)
 
 cv.imshow('Detected Face', img)
