@@ -15,7 +15,7 @@ labels = np.load('labels.npy')
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Photoes for test/Friends.jpeg')
+img = cv.imread(r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Photoes for test/1.jpeg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Person', gray)
