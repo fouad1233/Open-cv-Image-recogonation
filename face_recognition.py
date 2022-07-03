@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 import os
 haar_cascade = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
-DIR = r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Faces/train'
+DIR = r'/Users/fuad/Desktop/Python workspace/Opencv_face_recognation/Resources/Photoes'
 people = []
 for i in os.listdir(DIR):
     people.append(i)
