@@ -6,7 +6,7 @@ from google_images_download import google_images_download
 missing_charackters = ["Monica Geller", "Phoebe Buffay", "Janice Hosenstein" , "Chandler Bing", "Ross Geller", "Joey Tribbiani"]
 for i in range(len(missing_charackters)):
     response = google_images_download.googleimagesdownload()
-    arguments = {"keywords":"missing_charackters",
+    arguments = {"keywords":missing_charackters[i],
                 "limit":100,"print_urls":False}
     paths = response.download(arguments)
 
